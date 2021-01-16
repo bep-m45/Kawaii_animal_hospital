@@ -16,12 +16,16 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  //@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nerko+One&family=Noto+Sans+JP:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
 
  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
  }
+
+
 
 /* header */
  header {
@@ -30,11 +34,11 @@
   display: flex;
   justify-content: center;
   background-color: #ef790f;
-  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
  }
 
 .headlign {
- width: 80%;
+ width: 90%;
  padding: 2% 0;
  display: flex;
  justify-content: flex-end;
@@ -49,7 +53,7 @@
 }
 
 .header-item {
- color: #ffffff
+ color: #ffffff;
 }
 
 /* menubar */
@@ -59,6 +63,8 @@ margin: 0 auto;
 padding: 0;
 width: 80%;
 text-align: center;
+font-size: 130%;
+font-family: 'Hachi Maru Pop', cursive;
 }
 
 ul li{
@@ -82,9 +88,10 @@ background-color: #FFF2CC;
 
 /* main */
 main {
- width: 100%;
- height: auto;
+width: 100%;
+height: auto;
 }
+
 /* footer */
 footer {
   width: 100%;
@@ -92,10 +99,11 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #ef790f;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
 }
 
 .footlign {
- width: 80%;
+ width: 90%;
  padding: 2% 0;
 }
 
@@ -104,3 +112,60 @@ footer {
   text-align: right;
   color: #ffffff;
 }
+
+/* home */
+.home-imege-container {
+  width: 100%;
+}
+
+.home-main {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+}
+
+.home-image-item {
+  width: 100%;
+}
+.slick-next {
+  right: 10px !important;
+  z-index: 100;
+ }
+
+.slick-prev {
+  left: 10px !important;
+  z-index: 100;
+ }
+
+ .notise-container {
+   width: 30%;
+   padding: 2%;
+   margin-right: 2%;
+   border: solid 2px #ef790f;
+   border-radius: 15%;
+ }
+
+ .notise-heading {
+   margin-bottoms: 1%;
+   text-align: center;
+   color: #ef790f;
+   font-family: 'Hachi Maru Pop', cursive;
+ }
+
+ .notise-item {
+   font-size: 120%;
+ }
+
+ .nav-container {
+   width: 60%;
+   padding: 2%;
+   margin-left: 2%;
+   border: solid 2px #ef790f;
+   border-radius: 10%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .nav-image {
+   width: 50%;
+ }

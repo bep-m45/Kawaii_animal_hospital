@@ -16,3 +16,11 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
+
+$(function() {
+  $('#slider').slick({
+      dots: true, //スライドの下にドットのナビゲーションを表示
+      autoplay: true, //自動再生
+      autoplaySpeed: 1500, //再生スピード
+  });
+});
