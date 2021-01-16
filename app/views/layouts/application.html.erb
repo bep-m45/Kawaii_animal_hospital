@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>可愛動物病院</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header>
+      <div class="headlign">
+        <div class="logo"></div>
+        <div class="header-item">
+          <p>
+            TEL: 0000-00-0000<br />
+            診療時間　9:00~12:00 / 16:00~19:00<br />
+            休診日　水曜日<br />
+            （土日、祝日も通常診療）
+          </p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href=”#”>診療方針</a></li>
+        <li><a href=”#”>スタッフ紹介</a></li>
+        <li><a href=”#”>トリミング</a></li>
+        <li><a href=”#”>ホテル</a></li>
+        <li><a href=”#”>施設紹介</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+      <div class="footlign">
+        <p class="copyright">Copyright © 2020 KAAI Veterinary Clinic. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

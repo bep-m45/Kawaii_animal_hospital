@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ //@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nerko+One&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+/* header */
+ header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #ef790f;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, .5);
+ }
+
+.headlign {
+ width: 80%;
+ padding: 2% 0;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.logo {
+ margin-right: auto;
+ width: 280px;
+ height: 65px;
+ background-image: image-url("Logo.PNG");
+ background-size: cover;
+}
+
+.header-item {
+ color: #ffffff
+}
+
+/* menubar */
+ul{
+display: table;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+text-align: center;
+}
+
+ul li{
+display: table-cell;
+min-width: 50px;
+}
+
+ul li a{
+display: block;
+width: 100%;
+padding: 10px 0;
+text-decoration: none;
+color: #555;
+font-weight: bold;
+}
+
+
+ul li:hover{
+background-color: #FFF2CC;
+}
+
+/* main */
+main {
+ width: 100%;
+ height: auto;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  background-color: #ef790f;
+}
+
+.footlign {
+ width: 80%;
+ padding: 2% 0;
+}
+
+.footlign > p {
+  line-height: 85px;
+  text-align: right;
+  color: #ffffff;
+}
