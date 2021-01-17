@@ -5,8 +5,8 @@
     
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application" %>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -30,10 +30,10 @@
       <ul>
         <li><a href=”#”>診療方針</a></li>
         <li><a href=”#”>スタッフ紹介</a></li>
-        <li><a href=”#”>トリミング</a></li>
+        <li><%= link_to"トリミング",trimming_path %></li>
         <li><a href=”#”>ホテル</a></li>
         <li><a href=”#”>施設紹介</a></li>
-        <li><a href=”#”>予約</a></li>
+        <li><%= link_to"予約", root_path(anchor: "inpuiry-heading") %></li>
       </ul>
     </nav>
     <main>
