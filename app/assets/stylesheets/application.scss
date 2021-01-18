@@ -32,12 +32,17 @@ h1 {
   font-family: 'Hachi Maru Pop', cursive;
   color: #ef790f;
   text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  margin: 5% 0;
 }
 
 h2 {
   font-family: 'Hachi Maru Pop', cursive;
   color: #ef790f;
   text-align: center;
+  font-weight: 900;
+  font-size: 35px;
 }
 
 h3 {
@@ -53,9 +58,14 @@ h4 {
 
 .box {
  padding: 2%;
- margin: 2%;
+ margin: 2% 0;
  background-color: #ffffff;
  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.containers {
+  display: flex;
+  flex: flex-end;
 }
 
 /* header */
@@ -184,8 +194,9 @@ footer {
  margin-right: 2%;
  border: solid 4px #ef790f;
  border-radius: 15%;
- background-color: #ffffff;
+ background-color: rgba(255, 240, 30, 0.1);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  
 }
 
 .notise-heading {
@@ -258,14 +269,67 @@ footer {
 .access-text-container {
   width: 30%;
   margin-left: 5%;
-  color: #ef790f;
+  
+}
+
+.access-text-heading {
+  font-size: 130%;
 }
 
 .access-text-item {
-  font-size: 150%;
+  font-size: 100%;
 }
 
 /* trimming */
+.trimming-container {
+  width: 73%;
+}
+
+.sidebar-left {
+  width: 6%;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+.sidebar-right {
+  width: 6%;
+}
+
+
+.tirimming-image-1 {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    width: 250%;
+    margin-top: 100%;
+ }
+ 
+ .tirimming-image-2 {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.0s;
+    width: 200%;
+    margin-top: 950%;
+    
+ }
+ 
+.animation{
+    animation-name: anim_s;
+    transform: rotate(10deg);
+    animation-duration: 5s;
+}
+
+@keyframes anim_s {
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
 .commitment-container {
 }
 .commitment-text {
@@ -275,7 +339,7 @@ footer {
 }
 
 .commitment-text > ul {
-  padding: 2% 5% 2% 5%;
+  padding: 2% 5% 2% 7%;
   font-size: 130%;
 }
 
@@ -296,6 +360,11 @@ footer {
 }
 
 /* trimming-complement */
+// .border {
+//   border-bottom: 2px solid  #ef790f;
+//   margin: 5% 5% 3% 5%;
+// }
+
 .complement-container {
   display: flex;
   justify-content: center;
@@ -305,8 +374,9 @@ footer {
 }
 
 .price-text {
-  text-align: right;
+  text-align: center;
   color: #FF1E22;
+  font-size: 90%;
 }
 
 .price-message-container {
@@ -346,3 +416,24 @@ color: #ef790f;
 .coupon-text > p {
   padding: 2% 5%;
 }
+
+/* trimming-gallery */
+.gyallery-container {
+  margin: 7% 5% 5% 5%;
+}
+.gallery-background {
+  width: 100%;
+  height: 800px;
+  padding-top: 10%;
+  background-image: image-url("gallery-back.jpg");
+  background-size: cover;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.gallery-heading {
+  font-size: 400%;
+  text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
+  color: #ef790f;
+}
+
