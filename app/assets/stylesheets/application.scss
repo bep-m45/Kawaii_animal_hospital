@@ -128,7 +128,7 @@ font-weight: bold;
 
 
 .menubar > ul li:hover{
-background-color: #FFF2CC;
+background-color: #f2dc24;
 }
 
 /* main */
@@ -423,17 +423,66 @@ color: #ef790f;
 }
 .gallery-background {
   width: 100%;
-  height: 800px;
   padding-top: 10%;
+  padding-bottom: 10%;
   background-image: image-url("gallery-back.jpg");
   background-size: cover;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .gallery-heading {
+  margin-bottom: 5%;
   font-size: 400%;
   text-align: center;
   font-family: 'Hachi Maru Pop', cursive;
   color: #ef790f;
 }
+
+.gallery-image-container {
+  width: 100%;
+  padding: 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width: 30%;
+  display-size: cover;
+}
+
+.gallery-image:hover {
+  width: 30%;
+  display-size: cover;
+  -webkit-animation: gallery-image 0.8s linear 0s 1;
+	animation: gallery-image 0.8s linear 0s 1;
+}
+
+@-webkit-keyframes gallery-image {
+	0%   { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+	15%  { -webkit-transform: scale(0.9, 0.9) translate(0%, 5%); }
+	30%  { -webkit-transform: scale(1.3, 0.8) translate(0%, 10%); }
+	50%  { -webkit-transform: scale(0.8, 1.3) translate(0%, -10%); }
+	70%  { -webkit-transform: scale(1.1, 0.9) translate(0%, 5%); }
+	100% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+@keyframes gallery-image {
+	0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+	15%  { transform: scale(0.9, 0.9) translate(0%, 5%); }
+	30%  { transform: scale(1.3, 0.8) translate(0%, 10%); }
+	50%  { transform: scale(0.8, 1.3) translate(0%, -10%); }
+	70%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+	100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+
+.gallery-image:nth-child(2), .gallery-image:nth-child(5), .gallery-image:nth-child(8),
+.gallery-image:nth-child(11) {
+  margin: 0 5%;
+}
+
+.gallery-image:nth-child(-n+9) {
+ margin-bottom: 5%; 
+}
+
+
+
 

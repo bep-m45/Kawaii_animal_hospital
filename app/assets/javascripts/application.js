@@ -24,3 +24,10 @@ $(function() {
       autoplaySpeed: 1500, //再生スピード
   });
 });
+
+window.onload = function() {
+ $('#gallery-animation').hover(
+ function(){$(this).addClass('gallery-image');},
+ function(){$(this).removeClass('gallery-image');}
+ );
+};
