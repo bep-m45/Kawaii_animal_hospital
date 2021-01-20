@@ -30,6 +30,7 @@ body {
 
 main {
   width: 100%;
+  z-index: 2;
 }
 
 h1 {
@@ -85,31 +86,44 @@ h4 {
 }
 
 /* header */
- header {
+.header-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .headlign {
- width: 90%;
- padding: 1% 0;
+ width: 80%;
+ padding: 1% 7% 1% 1%;
  display: flex;
  justify-content: flex-end;
 }
 
 .logo {
- width: 115px;
- height: 80px;
+ width: 155px;
+ height: 110px;
  background-image: image-url("Logo-img.PNG");
-  background-position: center;
+ background-position: center;
  background-size: cover;
 }
 
 .header-item {
- color: #ef790f;
- font-size: 90%;
- margin-left: auto;
+   margin-left: auto;
+  // transition: .3s;
+}
+
+// .header-item:hover {
+//   transform: rotate(20deg);
+// }
+
+.reservation-image {
+ width: 150px;
+ height: 120px;
+ position: fixed;
+ z-index: 1;
+ background-position: center;
+ background-size: cover;
+ background-image: image-url("reservation-img.png");
 }
 
 /* menubar */

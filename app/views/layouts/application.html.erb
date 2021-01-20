@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>可愛動物病院</title>
-    
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload" %>
@@ -14,28 +14,26 @@
   </head>
   <body>
     <header>
-      <div class="headlign">
-        <%= link_to root_path, "data-turbolinks": false do %><div class="logo"></div><% end %>
-        <div class="header-item">
-          <p>
-            TEL: 0000-00-0000<br />
-            診療時間　9:00~12:00 / 16:00~19:00<br />
-            休診日　水曜日<br />
-            （土日、祝日も通常診療）
-          </p>
+      <div class="header-container">
+        <div class="headlign">
+          <%= link_to root_path, "data-turbolinks": false do %><div class="logo"></div><% end %>
+          <div class="header-item">
+            <%= link_to root_path(anchor: "inpuiry-heading"), "data-turbolinks": false do %>
+              <div class="reservation-image"></div>
+            <% end %>
+          </div>  
         </div>
       </div>
-    </header>
-    <nav class="menubar">
-      <ul>
-        <li><a href="http://ebc50th.com/t/shinsatsuananai/">診療方針</a></li>
-        <li><a href="http://ebc50th.com/t/staff/">スタッフ紹介</a></li>
-        <li><%= link_to"トリミング",trimming_path %></li>
-        <li><a href="http://ebc50th.com/t/hotel/">ホテル</a></li>
-        <li><a href="http://ebc50th.com/t/shisetsu/">施設紹介</a></li>
-        <li><%= link_to"予約", root_path(anchor: "inpuiry-heading"), "data-turbolinks": false %></li>
-      </ul>
-    </nav>
+      <nav class="menubar">
+        <ul>
+          <li><a href="http://ebc50th.com/t/shinsatsuananai/">診療方針</a></li>
+          <li><a href="http://ebc50th.com/t/staff/">スタッフ紹介</a></li>
+          <li><%= link_to"トリミング",trimming_path %></li>
+          <li><a href="http://ebc50th.com/t/hotel/">ホテル</a></li>
+          <li><a href="http://ebc50th.com/t/shisetsu/">施設紹介</a></li>
+        </ul>
+      </nav>
+    </header>  
     <main>
         <%= yield %>
     </main>
