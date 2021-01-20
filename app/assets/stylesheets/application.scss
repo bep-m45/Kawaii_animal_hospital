@@ -28,13 +28,17 @@ body {
   background-color: rgba(239, 121, 15, 0.07);
 }
 
+main {
+  width: 100%;
+}
+
 h1 {
   font-family: 'Hachi Maru Pop', cursive;
   color: #ef790f;
   text-align: center;
   font-weight: 900;
-  font-size: 60px;
-  margin: 5% 0;
+  font-size: 70px;
+  margin-bottom: 5%;
 }
 
 h2 {
@@ -62,6 +66,18 @@ h4 {
  background-color: #ffffff;
  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
+
+.btn-hover:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+// .flam-top{
+//   wide: 100%;
+//   background-image: image-url("flame-flower-2.PNG");
+//   background-position: top;
+//   background-size: cover;
+// }
 
 .containers {
   display: flex;
@@ -165,8 +181,17 @@ footer {
 
 .home-main {
   display: flex;
-  margin-top: 7%;
+  // padding: 15% 5% 0 5%;
 }
+
+.home-flame-top {
+  background-image: image-url("flame-flower-1.PNG");
+  background-size: cover;
+  background-position: top;
+  padding: 19% 17% 5% 17%;
+  display: flex;
+}
+
 
 .home-image-item {
   width: 100%;
@@ -194,8 +219,8 @@ footer {
  margin-right: 2%;
  border: solid 4px #ef790f;
  border-radius: 15%;
- background-color: rgba(255, 240, 30, 0.1);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+ background-color: #ffffff;
+ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 
 }
 
@@ -220,7 +245,7 @@ footer {
  display: flex;
  flex-wrap: wrap;
  background-color: #ffffff;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .nav-image {
