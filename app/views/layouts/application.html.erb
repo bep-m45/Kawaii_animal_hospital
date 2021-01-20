@@ -15,7 +15,7 @@
   <body>
     <header>
       <div class="headlign">
-        <%= link_to root_path do %><div class="logo"></div><% end %>
+        <%= link_to root_path, "data-turbolinks": false do %><div class="logo"></div><% end %>
         <div class="header-item">
           <p>
             TEL: 0000-00-0000<br />
@@ -33,7 +33,7 @@
         <li><%= link_to"トリミング",trimming_path %></li>
         <li><a href=”#”>ホテル</a></li>
         <li><a href=”#”>施設紹介</a></li>
-        <li><%= link_to"予約", root_path(anchor: "inpuiry-heading") %></li>
+        <li><%= link_to"予約", root_path(anchor: "inpuiry-heading"), "data-turbolinks": false %></li>
       </ul>
     </nav>
     <main>

@@ -71,7 +71,6 @@ h4 {
 /* header */
  header {
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
 }
@@ -80,20 +79,21 @@ h4 {
  width: 90%;
  padding: 1% 0;
  display: flex;
- justify-content: center;
+ justify-content: flex-end;
 }
 
 .logo {
- margin-right: auto;
- width: 250px;
- height: 60px;
- background-image: image-url("Logo.PNG");
+ width: 115px;
+ height: 80px;
+ background-image: image-url("Logo-img.PNG");
+  background-position: center;
  background-size: cover;
 }
 
 .header-item {
  color: #ef790f;
  font-size: 90%;
+ margin-left: auto;
 }
 
 /* menubar */
@@ -182,7 +182,7 @@ footer {
   left: 10px !important;
   z-index: 100;
  }
- 
+
  .slick-dots {
    background-color: #ef790f;
  }
@@ -196,7 +196,7 @@ footer {
  border-radius: 15%;
  background-color: rgba(255, 240, 30, 0.1);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-  
+
 }
 
 .notise-heading {
@@ -269,7 +269,7 @@ footer {
 .access-text-container {
   width: 30%;
   margin-left: 5%;
-  
+
 }
 
 .access-text-heading {
@@ -304,7 +304,7 @@ footer {
     width: 250%;
     margin-top: 100%;
  }
- 
+
  .tirimming-image-2 {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -312,9 +312,9 @@ footer {
     animation-duration: 1.0s;
     width: 200%;
     margin-top: 950%;
-    
+
  }
- 
+
 .animation{
     animation-name: anim_s;
     transform: rotate(10deg);
@@ -427,6 +427,7 @@ color: #ef790f;
   padding-bottom: 10%;
   background-image: image-url("gallery-back.jpg");
   background-size: cover;
+  background-position: center;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -480,7 +481,7 @@ color: #ef790f;
 }
 
 .gallery-image:nth-child(-n+9) {
- margin-bottom: 5%; 
+ margin-bottom: 5%;
 }
 
 
