@@ -38,7 +38,8 @@ h1 {
   color: #ef790f;
   text-align: center;
   font-weight: 900;
-  font-size: 70px;
+  padding-top: 15%;
+  font-size: 600%;
   margin-bottom: 5%;
 }
 
@@ -73,12 +74,16 @@ h4 {
   transform: scale(1.1, 1.1);
 }
 
-// .flam-top{
-//   wide: 100%;
-//   background-image: image-url("flame-flower-2.PNG");
-//   background-position: top;
-//   background-size: cover;
-// }
+.page-title {
+  width: 100%;
+}
+
+.flame-top{
+  width: 100%;
+  background-image: image-url("flame-flower-2.PNG");
+  background-position: top;
+  background-size: cover;
+}
 
 .containers {
   display: flex;
@@ -94,7 +99,7 @@ h4 {
 
 .headlign {
  width: 80%;
- padding: 1% 7% 1% 1%;
+ padding: 1% 9% 1% 1%;
  display: flex;
  justify-content: flex-end;
 }
@@ -117,8 +122,8 @@ h4 {
 // }
 
 .reservation-image {
- width: 150px;
- height: 120px;
+ width: 180px;
+ height: 150px;
  position: fixed;
  z-index: 1;
  background-position: center;
@@ -354,7 +359,7 @@ footer {
 
  }
 
-.animation{
+.trimming-animation{
     animation-name: anim_s;
     transform: rotate(10deg);
     animation-duration: 5s;
