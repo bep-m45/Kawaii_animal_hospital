@@ -81,7 +81,7 @@ h4 {
 .flame-top{
   width: 100%;
   background-image: image-url("flame-flower-2.PNG");
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -105,8 +105,8 @@ h4 {
 }
 
 .logo {
- width: 155px;
- height: 110px;
+ width: 135px;
+ height: 105px;
  background-image: image-url("Logo-img.PNG");
  background-position: center;
  background-size: cover;
@@ -281,10 +281,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
  /* home-inpuiry */
-// .inpuiry-containers {
-//   width: 100%;
-//   height: auto;
-// }
 
 .inpuiry-containers {
  margin-top: 1%;
@@ -443,11 +439,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* trimming-complement */
-// .border {
-//   border-bottom: 2px solid  #ef790f;
-//   margin: 5% 5% 3% 5%;
-// }
-
 .complement-container {
   display: flex;
   justify-content: center;
