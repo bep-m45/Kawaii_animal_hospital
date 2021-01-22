@@ -38,7 +38,8 @@ h1 {
   color: #ef790f;
   text-align: center;
   font-weight: 900;
-  font-size: 70px;
+  padding-top: 15%;
+  font-size: 600%;
   margin-bottom: 5%;
 }
 
@@ -73,12 +74,16 @@ h4 {
   transform: scale(1.1, 1.1);
 }
 
-// .flam-top{
-//   wide: 100%;
-//   background-image: image-url("flame-flower-2.PNG");
-//   background-position: top;
-//   background-size: cover;
-// }
+.page-title {
+  width: 100%;
+}
+
+.flame-top{
+  width: 100%;
+  background-image: image-url("flame-flower-2.PNG");
+  background-position: top;
+  background-size: cover;
+}
 
 .containers {
   display: flex;
@@ -94,7 +99,7 @@ h4 {
 
 .headlign {
  width: 80%;
- padding: 1% 7% 1% 1%;
+ padding: 1% 9% 1% 1%;
  display: flex;
  justify-content: flex-end;
 }
@@ -117,8 +122,8 @@ h4 {
 // }
 
 .reservation-image {
- width: 150px;
- height: 120px;
+ width: 180px;
+ height: 150px;
  position: fixed;
  z-index: 1;
  background-position: center;
@@ -170,16 +175,21 @@ height: auto;
 /* footer */
 footer {
   width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  background-color: #ef790f;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flame-bottom {
+  width: 100%;
+  height: 355px;
+  background-image: image-url("flame-flower-3.PNG");
+  background-position: center;
+  background-size: cover;
 }
 
 .footlign {
- width: 90%;
- padding: 2% 0;
+width: 100%;
+  height: 100px;
+background-color: #ef790f;
+box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .footlign > p {
@@ -271,11 +281,37 @@ footer {
 }
 
  /* home-inpuiry */
+// .inpuiry-containers {
+//   width: 100%;
+//   height: auto;
+// }
+
+.inpuiry-containers {
+ margin-top: 1%;
+ margin: 2%;
+
+}
 .inpuiry-container {
  display: flex;
  justify-content: center;
- margin-top: 1%;
- padding: 2%;
+ width: 100%;
+
+}
+
+.inpuiry-image-1 {
+  background-image: image-url("inpuiry-image-1.png");
+  background-size: cover;
+  background-position: center;
+  width: 33%;
+  margin: 1%;
+}
+
+.inpuiry-image-2 {
+  background-image: image-url("inpuiry-image-2.png");
+   background-size: cover;
+  background-position: center;
+  width: 21%;
+  margin: 1%;
 }
 
 .inpuiry-image {
@@ -284,8 +320,16 @@ footer {
 
 .inpuiry-image-item {
  width: 100%;
- padding-right: 2%;
  margin-top: 10%;
+}
+
+.inpuiry-image-item:nth-child(1) {
+ padding-right: 7%;
+}
+
+
+.inpuiry-image-item:nth-child(2) {
+ padding-left: 7%;
 }
 
 .calender-image-item {
@@ -354,7 +398,7 @@ footer {
 
  }
 
-.animation{
+.trimming-animation{
     animation-name: anim_s;
     transform: rotate(10deg);
     animation-duration: 5s;
@@ -471,15 +515,16 @@ color: #ef790f;
 }
 
 .gallery-heading {
-  margin-bottom: 5%;
-  font-size: 400%;
   text-align: center;
-  font-family: 'Hachi Maru Pop', cursive;
-  color: #ef790f;
+}
+
+.gallery-heading-image {
+  width: 80%;
 }
 
 .gallery-image-container {
   width: 100%;
+  margin-top: 5%;
   padding: 0 15%;
   display: flex;
   flex-wrap: wrap;
