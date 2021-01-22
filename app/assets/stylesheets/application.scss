@@ -18,7 +18,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
 
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -81,7 +81,7 @@ h4 {
 .flame-top{
   width: 100%;
   background-image: image-url("flame-flower-2.PNG");
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -105,8 +105,8 @@ h4 {
 }
 
 .logo {
- width: 155px;
- height: 110px;
+ width: 135px;
+ height: 105px;
  background-image: image-url("Logo-img.PNG");
  background-position: center;
  background-size: cover;
@@ -274,6 +274,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
  width: 100%;
 }
 
+ /* home-inpuiry */
 .inpuiry-containers {
  margin-top: 1%;
  margin: 2%;
@@ -368,21 +369,21 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 
 
 .tirimming-image-1 {
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 1.5s;
-  width: 250%;
-  margin-top: 100%;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    width: 250%;
+    margin-top: 100%;
  }
 
  .tirimming-image-2 {
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 1.0s;
-  width: 200%;
-  margin-top: 950%;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.0s;
+    width: 200%;
+    margin-top: 950%;
 
  }
 
@@ -401,6 +402,8 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
+.commitment-container {
+}
 .commitment-text {
   width: 100%;
   border: solid 4px #3F9BBF;
@@ -428,6 +431,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
+/* trimming-complement */
 .complement-container {
   display: flex;
   justify-content: center;
@@ -453,7 +457,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   margin-right: 2.5%;
 }
 .price-message-container > h4 {
-  color: #ef790f;
+color: #ef790f;
 }
 
 .coupon-container {
