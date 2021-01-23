@@ -173,16 +173,32 @@ footer {
 }
 
 .flame-bottom {
-  width: 100%;
-  height: 355px;
-  background-image: image-url("flame-flower-3.PNG");
-  background-position: center;
-  background-size: cover;
+  /* big-flower */
+  // width: 100%;
+  // height: 355px;
+  // background-image: image-url("flame-flower-3.PNG");
+  // background-position: center;
+  // background-size: cover;
+
+  /* 桜 */
+//   width: 50%;
+//   height: 355px;
+//   background-image: image-url("flame-flower-5.PNG");
+//   background-position: top;
+//   background-size: cover;
+//   margin-left: auto;
+
+/* 足跡 */
+  padding: 7%;
+  background-image: image-url("flame-animal-1.PNG");
+  background-position: top;
+  background-size: contain;
+
 }
 
 .footlign {
 width: 100%;
-  height: 100px;
+height: 100px;
 background-color: #ef790f;
 box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
@@ -203,13 +219,28 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .home-flame-top {
-  background-image: image-url("flame-flower-1.PNG");
-  background-size: cover;
-  background-position: top;
-  padding: 19% 17% 5% 17%;
+/* big-flower */
+  // background-image: image-url("flame-flower-1.PNG");
+  // background-size: cover;
+  // background-position: center;
+  // padding: 19% 17% 5% 17%;
+  // display: flex;
+/* 桜 */
+  // width: 50%;
+  // padding: 19% 17% 5% 17%;
+  // background-image: image-url("flame-flower-4.PNG");
+  // display: flex;
+  // background-size: cover;
+  // background-position: bottom;
+  
+  /* 足跡　*/
+  padding: 7%;
+  margin-bottom: 5%;
+  background-image: image-url("flame-animal-1.PNG");
   display: flex;
+  background-size: contain;
+  background-position: bottom;
 }
-
 
 .home-image-item {
   width: 100%;
@@ -231,6 +262,10 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
  }
 
 /* home-notise-nav */
+.dogrun-vedeo {
+  width: 30%;
+}
+
 .notise-container {
  width: 30%;
  padding: 2%;
@@ -391,6 +426,10 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
     animation-name: anim_s;
     transform: rotate(10deg);
     animation-duration: 5s;
+}
+
+.trimming-animation:hover{
+  transform:scale(1.2,1.2);
 }
 
 @keyframes anim_s {
