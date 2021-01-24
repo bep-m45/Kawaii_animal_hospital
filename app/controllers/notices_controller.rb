@@ -6,6 +6,10 @@ class NoticesController < ApplicationController
   end
   
   def new
+    @notice = Notice.new
+  end
+  
+  def create
   end
   
   def edit
