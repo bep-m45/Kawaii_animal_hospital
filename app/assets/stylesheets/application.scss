@@ -16,8 +16,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-
-
+ 
  * {
   margin: 0;
   padding: 0;
@@ -338,7 +337,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 
 .inpuiry-image-2 {
   background-image: image-url("inpuiry-image-2.png");
-   background-size: cover;
+  background-size: cover;
   background-position: center;
   width: 21%;
   margin: 1%;
@@ -410,28 +409,28 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 
 
 .tirimming-image-1 {
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 1.5s;
-    width: 250%;
-    margin-top: 100%;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 250%;
+  margin-top: 100%;
  }
 
  .tirimming-image-2 {
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 1.0s;
-    width: 200%;
-    margin-top: 950%;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.0s;
+  width: 200%;
+  margin-top: 950%;
 
  }
 
 .trimming-animation{
-    animation-name: anim_s;
-    transform: rotate(10deg);
-    animation-duration: 5s;
+  animation-name: anim_s;
+  transform: rotate(10deg);
+  animation-duration: 5s;
 }
 
 .trimming-animation:hover{
@@ -447,8 +446,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
-.commitment-container {
-}
 .commitment-text {
   width: 100%;
   border: solid 4px #3F9BBF;
