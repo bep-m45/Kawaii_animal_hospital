@@ -4,7 +4,7 @@ class CreateNotices < ActiveRecord::Migration[5.2]
       t.string :title
       t.text  :text
       t.string  :image_id
-      t.timestamps null: true
+      t.integer :category_id
       t.timestamps
     end
   end
