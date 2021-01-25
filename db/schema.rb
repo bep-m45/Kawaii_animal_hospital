@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_24_062422) do
+ActiveRecord::Schema.define(version: 2021_01_25_060414) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "category_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "doctors", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -28,6 +34,7 @@ ActiveRecord::Schema.define(version: 2021_01_24_062422) do
     t.string "title"
     t.text "text"
     t.string "image_id"
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
