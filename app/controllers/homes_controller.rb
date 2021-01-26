@@ -4,4 +4,7 @@ class HomesController < ApplicationController
   
   def trimming
   end
+  
+  def hotel
+  end
 end
