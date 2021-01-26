@@ -16,7 +16,8 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
- 
+
+
  * {
   margin: 0;
   padding: 0;
@@ -88,11 +89,6 @@ h4 {
   display: flex;
   background-size: cover;
   background-position: bottom;
-}
-
-.containers {
-  display: flex;
-  flex: flex-end;
 }
 
 /* header */
@@ -171,6 +167,49 @@ main {
 width: 100%;
 height: auto;
 }
+
+.containers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 73%;
+}
+
+.sidebar-left {
+  width: 6%;
+}
+
+.sidebar-right {
+  width: 6%;
+}
+
+.message-container-a {
+  width: 35%;
+  border: solid 4px rgba(255, 240, 30, 0.6);
+  background-color: rgba(255, 240, 30, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  padding: 2% 5%;
+  margin-top: 2%;
+  margin-right: 2.5%;
+  color: #ef790f;
+}
+
+.message-container-b {
+  width: 35%;
+  border: solid 4px rgba(255, 240, 30, 0.6);
+  background-color: rgba(255, 240, 30, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  padding: 2% 5%;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  color: #ef790f;
+}
+
 
 /* footer */
 footer {
@@ -328,7 +367,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .inpuiry-image-1 {
-  background-image: image-url("inpuiry-image-1.png");
+  background-image: image-url("home/inpuiry-image-1.png");
   background-size: cover;
   background-position: center;
   width: 33%;
@@ -336,8 +375,8 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .inpuiry-image-2 {
-  background-image: image-url("inpuiry-image-2.png");
-  background-size: cover;
+  background-image: image-url("home/inpuiry-image-2.png");
+   background-size: cover;
   background-position: center;
   width: 21%;
   margin: 1%;
@@ -393,20 +432,13 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* trimming */
-.trimming-container {
-  width: 73%;
+.trimming-sidebar-left{
+
 }
 
-.sidebar-left {
-  width: 6%;
-  margin-left: 2%;
-  margin-right: 5%;
+.trimming-sidebar-right {
+ 
 }
-
-.sidebar-right {
-  width: 6%;
-}
-
 
 .tirimming-image-1 {
   animation-timing-function: ease-in-out;
@@ -446,6 +478,8 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
+.commitment-container {
+}
 .commitment-text {
   width: 100%;
   border: solid 4px #3F9BBF;
@@ -488,20 +522,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   font-size: 90%;
 }
 
-.price-message-container {
-  width: 35%;
-  border: solid 4px rgba(255, 240, 30, 0.6);
-  background-color: rgba(255, 240, 30, 0.6);
-  border-radius: 50%;
-  text-align: center;
-  padding: 2% 5%;
-  margin-top: 1%;
-  margin-right: 2.5%;
-}
-.price-message-container > h4 {
-color: #ef790f;
-}
-
 .coupon-container {
   width: 50%;
   margin-left: 2.5%;
@@ -534,7 +554,7 @@ color: #ef790f;
   width: 100%;
   padding-top: 10%;
   padding-bottom: 10%;
-  background-image: image-url("gallery-back.jpg");
+  background-image: image-url("trimming/gallery-back.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
@@ -592,6 +612,39 @@ color: #ef790f;
 
 .gallery-image:nth-child(-n+9) {
  margin-bottom: 5%;
+}
+
+/* hotel */
+
+.hotel-commitment-list {
+  list-style-type: none;
+}
+
+.hotel-item {
+  width: 50%;
+  padding: 2%;
+}
+
+.hotel-image-1 {
+  width: 30%;
+  height: 200px;
+  background-color: gray;
+}
+
+.hotel-image-2 {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+}
+
+.hotel-image-3 {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+}
+
+.hotel-praice-text {
+  font-size: 130%;
 }
 
 
