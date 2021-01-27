@@ -10,6 +10,7 @@ class Doctors::NoticesController < ApplicationController
   end
   
   def create
+    @notice = Notice.new(params[:id])
   end
   
   def edit
@@ -21,4 +22,10 @@ class Doctors::NoticesController < ApplicationController
   def destroy
   end
   
+  private
+  
+  def notice_pramas
+    params.require(:notice).permit(:title, :text, :image, :category)
+  end
+
 end
