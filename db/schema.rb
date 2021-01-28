@@ -10,13 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_25_060414) do
-
-  create_table "categories", force: :cascade do |t|
-    t.string "category_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 2021_01_24_062422) do
 
   create_table "doctors", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -28,15 +22,6 @@ ActiveRecord::Schema.define(version: 2021_01_25_060414) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_doctors_on_email", unique: true
     t.index ["reset_password_token"], name: "index_doctors_on_reset_password_token", unique: true
-  end
-
-  create_table "notices", force: :cascade do |t|
-    t.string "title"
-    t.text "text"
-    t.string "image_id"
-    t.integer "category_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

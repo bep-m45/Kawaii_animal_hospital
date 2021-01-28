@@ -13,7 +13,8 @@ class Doctors::NoticesController < ApplicationController
   def create
     @notice = Notice.new(notice_params)
     @notice.save
-    redirect_to notice_path(@notice.id)
+    redirect_to notices_path
+    
   end
 
   def edit
@@ -28,7 +29,7 @@ class Doctors::NoticesController < ApplicationController
   private
 
   def notice_params
-    params.require(:notice).permit(:title, :text, :image, :category)
+    params.permit(:title, :text)
   end
 
 end
