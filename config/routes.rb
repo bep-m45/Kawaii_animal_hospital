@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   }
   
   namespace :doctors do
-    resources :notices
+    resources :notices 
+    resources :categories
   end
-
+  
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

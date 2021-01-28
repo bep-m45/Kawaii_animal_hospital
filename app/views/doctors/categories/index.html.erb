@@ -1,0 +1,29 @@
+
+  <h1>カテゴリ一覧</h1>
+</div>
+<div class="containers">
+  <div class="sidebar-left"></div>
+  <div class="main-container">
+    <div class="box">
+      <h3>カテゴリ登録</h3>
+      <%= form_with model: @category, url: doctors_categories_path, local: true do |f| %>
+        <%= f.label :name, "カテゴリ名" %>
+        <%= f.text_field :name %>
+        <%= f.submit "登録" %>
+      <% end %>
+    </div>
+    <div class="box">
+      <% @categories.each do |category| %>
+        <table>
+          <tr>
+            <td>
+              <%= category.name %>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    </div>
+  </div>
+   <div class="sidebar-right"></div>
+</div>
+  
