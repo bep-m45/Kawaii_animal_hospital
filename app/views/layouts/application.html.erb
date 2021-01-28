@@ -26,9 +26,9 @@
       </div>
       <nav class="menubar">
         <ul>
-          <% if doctor_signed_in %>
+          <% if doctor_signed_in? %>
             <li><%= link_to "サインアウト", destroy_doctor_session_path, method: :delete %></li>
-            <li><% link_to "カテゴリー", new_doctors_notice_category %></li>
+            <li><%= link_to "カテゴリー", doctors_categories_path %></li>
 
           <% else %>
             <li><a href="http://ebc50th.com/t/shinsatsuananai/">診療方針</a></li>
