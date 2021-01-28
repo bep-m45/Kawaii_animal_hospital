@@ -42,6 +42,8 @@
     <footer>
       <div class="flame-bottom"></div>
       <div class="footlign">
+      管理者の方は<%= link_to "コチラ>>", new_doctor_session_path %>
+      <%= link_to "サインアウト", destroy_doctor_session_path, method: :delete %>
         <p class="copyright">Copyright © </p>
       </div>
     </footer>
