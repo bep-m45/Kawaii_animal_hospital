@@ -1,4 +1,4 @@
 class Notice < ApplicationRecord
   has_many :categories, dependent: :destroy
-  attachment :image_id
+  attachment :image
 end

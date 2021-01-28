@@ -1,0 +1,39 @@
+<h1>記事投稿画面</h1>
+<div class="containers">
+  <div class="sidebar-left"></div>
+    <div class="main-container">
+      <div class="box">
+        <%= attachment_image_tag @notice, :image %>
+        <%= form_with url: doctors_notices_path, local: true do |f| %>
+          <table>
+            <tr>
+              <td><%= f.label "画像" %></td>
+            </tr>
+            <tr>
+               <%#= f.attachment_field :image %>
+            <tr>
+              <td><%= f.label "タイトル" %></td>
+            </tr>
+            <tr>
+              <td><%= f.text_field :title %></td>
+            </tr>
+            <tr>
+              <td><%= f.label "テキスト" %></td>
+            </tr>
+            <tr>
+              <td><%= f.text_area :text %></td>
+            </tr>
+            <tr>
+              <td><%= f.label "カテゴリ" %></td>
+            </tr>
+            <tr>
+              <td><%= f.collection_select :category_id, Category.all, :id, :category_name, {prompt: "--選択してください--"} %></td>
+            </tr>
+          </table><br />
+          <%= f.submit %>
+        <% end %>
+      </div>
+    </div>
+    <div class="sidebar-right"></div>
+  </div>
+</div>

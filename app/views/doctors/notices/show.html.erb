@@ -1,0 +1,33 @@
+<h1>記事投稿 確認画面</h1>
+<div class="containers">
+  <div class="sidebar-left"></div>
+    <div class="main-container">
+      <div class="box">
+        <%#= image_tag attachment_url(@notice, :image, :fill, 300, 300, format: "jpg") %>
+        <%#= attachment_image_tag @notice, :image class:"notice-image", size: "310x310" %>
+        <%= attachment_image_tag @notice, :image %>
+          <table>
+            <tr>
+              <td>タイトル</td>
+            </tr>
+            <tr>
+              <td><%= @notice.title %></td>
+            </tr>
+            <tr>
+              <td>テキスト</td>
+            </tr>
+            <tr>
+              <td><%= @notice.text %></td>
+            </tr>
+            <tr>
+              <td>カテゴリ</td>
+            </tr>
+            <tr>
+              <td><%= @notice.category %></td>
+            </tr>
+          </table><br />
+      </div>
+    </div>
+    <div class="sidebar-right"></div>
+  </div>
+</div>
