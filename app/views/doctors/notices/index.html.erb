@@ -1,0 +1,38 @@
+<h1>投稿記事一覧</h1>
+
+<div class="containers">
+  <div class="sidebar-left"></div>
+  <div class="main-container">
+    <div class="box">
+      <table>
+        <thead>
+          <tr>
+            <th>タイトル</th>
+            <th>テキスト</th>
+            <th>カテゴリ</th>
+            <th></th>
+          </tr>  
+        </thead>
+        <tbody>
+          <% @notices.each do |notice| %>
+            <tr>
+              <td>
+                <%= notice.title %>
+              </td>
+              <td>
+                <%= notice.body %>
+              </td>
+              <td><%= notice.category_id %></td>
+              <td>
+                <%= link_to "編集", edit_doctors_notice_path(notice.id) %> 
+                <%= link_to "削除", doctors_notice_path(notice.id), method: :delete %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+   <div class="sidebar-right"></div>
+</div>
+  

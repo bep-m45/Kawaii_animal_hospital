@@ -3,29 +3,29 @@
   <div class="sidebar-left"></div>
     <div class="main-container">
       <div class="box">
-        <%#= image_tag attachment_url(@notice, :image, :fill, 300, 300, format: "jpg") %>
-        <%#= attachment_image_tag @notice, :image class:"notice-image", size: "310x310" %>
-        <%= attachment_image_tag @notice, :image %>
           <table>
             <tr>
-              <td>タイトル</td>
+              <th>タイトル</th>
             </tr>
             <tr>
               <td><%= @notice.title %></td>
             </tr>
             <tr>
-              <td>テキスト</td>
+              <th>テキスト</th>
             </tr>
             <tr>
-              <td><%= @notice.text %></td>
+              <td><%= @notice.body %></td>
             </tr>
             <tr>
-              <td>カテゴリ</td>
+              <th>カテゴリ</th>
             </tr>
             <tr>
-              <td><%= @notice.category %></td>
+              <td><%= @category.name %></td>
             </tr>
           </table><br />
+          <%= link_to "編集", edit_doctors_notice_path(@notice.id) %>
+          <%= link_to "削除", doctors_notice_path(@notice.id), method: :delete %>
+          <%= link_to "記事一覧", doctors_notices_path %>
       </div>
     </div>
     <div class="sidebar-right"></div>

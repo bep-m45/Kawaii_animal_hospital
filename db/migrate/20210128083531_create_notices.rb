@@ -4,7 +4,7 @@ class CreateNotices < ActiveRecord::Migration[5.2]
       t.integer :category_id
       t.string :title
       t.text :body
-      t.string :image_id
+      t.integer :doctor_id
 
       t.timestamps
     end
