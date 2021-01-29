@@ -23,6 +23,12 @@ class Doctors::CategoriesController < ApplicationController
   end
   
   def destroy
+    @category = Category.find(params[:id])
+    if @category.destroy
+      redirect_to doctors_categories_path
+    else 
+      render "index"
+    end  
   end
   
   private

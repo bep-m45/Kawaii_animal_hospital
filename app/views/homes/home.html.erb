@@ -12,24 +12,19 @@
     <div class="notise-container">
       <h3 class="notise-heading"><i class="fas fa-dog"></i> お知らせ</h3>
       <table>
+        <% @notice.each do |notice| %>
         <tr class="notise-item">
-          <td>
-            <p class="notise-create">2020/12/20</p>
-            <p class="notise-title"><a href="#">年末年始の診療時間について</a></p>
+          
+          <td class="notise-item">
+            <%= notice.title %>
           </td>
         </tr>
         <tr>
           <td class="notise-item">
-            <p class="notise-create">2021/1/4</p>
-            <p class="notise-title"><a href="#">年始のご挨拶</a></p>
+            <%= notice.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
           </td>
-        </tr>
-        <tr>
-          <td class="notise-item">
-            <p class="notise-create">201/1/19</p>
-            <p class="notise-title"><a href="#">ホームページリニューアルについて</a></p>
-          </td>
-        </tr>
+        </tr>  
+        <% end %>
       </table>
     </div>
 

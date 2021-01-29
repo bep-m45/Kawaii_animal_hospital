@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2021_01_28_083531) do
     t.integer "category_id"
     t.string "title"
     t.text "body"
-    t.string "image_id"
+    t.integer "doctor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
