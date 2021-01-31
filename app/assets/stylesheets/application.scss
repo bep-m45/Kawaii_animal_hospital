@@ -59,6 +59,12 @@ h4 {
   font-family: 'Hachi Maru Pop', cursive;
   text-align: center;
   border-bottom: 5px dotted;
+  font-size: 130%;
+}
+
+h5 {
+  font-size: 110%;
+  font-weight: 600;
 }
 
 .box {
@@ -198,18 +204,16 @@ height: auto;
   color: #ef790f;
 }
 
-.message-container-b {
-  width: 35%;
+.message-container-h {
+  width: 70%;
   border: solid 4px rgba(255, 240, 30, 0.6);
   background-color: rgba(255, 240, 30, 0.6);
-  border-radius: 50%;
-  text-align: center;
+  border-radius: 20%;
   padding: 2% 5%;
   margin-top: 2%;
   margin-left: 2.5%;
   color: #ef790f;
 }
-
 
 /* footer */
 footer {
@@ -630,28 +634,47 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   padding: 2%;
 }
 
-.hotel-image-1 {
-  width: 30%;
-  height: 200px;
-  background-color: gray;
-}
-
-.hotel-image-2 {
+.hotel-image-item {
   width: 100%;
-  height: 200px;
-  background-color: gray;
-}
-
-.hotel-image-3 {
-  width: 100%;
-  height: 200px;
-  background-color: gray;
+  height: 250px;
+  display: flex;
+  justify-contain: center;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .hotel-praice-text {
   font-size: 130%;
 }
 
+.dogrun-video {
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
 
+.hotel-background {
+  padding: 10%;
+  margin-top: 5%;
+  
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  background-image: image-url("hotel/hotel-background.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.hotel-background > .containers {
+  margin: 5% 0;
+}
+
+.hotel-image-heading {
+  padding: 1%;
+  text-align: center;
+  font-size: 110%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hotel-image3 {
+  width: 30%;
+}
 
 
