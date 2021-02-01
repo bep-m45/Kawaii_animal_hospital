@@ -28,7 +28,7 @@
         <ul>
           <% if doctor_signed_in? %>
             <li><%= link_to "サインアウト", destroy_doctor_session_path, method: :delete %></li>
-            <li><%= link_to "カテゴリー", doctors_categories_path %></li>
+            <li><%= link_to "記事投稿", new_notice_path %></li>
 
           <% else %>
             <li><a href="http://ebc50th.com/t/shinsatsuananai/">診療方針</a></li>

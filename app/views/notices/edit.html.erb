@@ -4,7 +4,7 @@
   <div class="sidebar-left"></div>
     <div class="main-container">
       <div class="box">
-        <%= form_with url: doctors_notices_path, local: true do |f| %>
+       <%= form_with model: @notice, local: true do |f| %>
           <table>
             <tr>
               <td><%= f.label :title, "タイトル" %></td>
