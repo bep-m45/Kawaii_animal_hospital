@@ -1,4 +1,4 @@
-class Doctors::NoticesController < ApplicationController
+class NoticesController < ApplicationController
   
   def index
     @notices = Notice.all
@@ -7,7 +7,7 @@ class Doctors::NoticesController < ApplicationController
   end
   def show
     @notice = Notice.find(params[:id])
-    @category = Category.find(params[:id])
+    # @category = Category.find(params[:category_id])
   end 
   
   def new
@@ -16,9 +16,8 @@ class Doctors::NoticesController < ApplicationController
   
   def create
     @notice = Notice.new(notice_params)
-    @notice.doctor_id = current_doctor.id
     if @notice.save
-      redirect_to doctors_notice_path(@notice.id)
+      redirect_to notice_path(@notice.id)
     else
       render "new"
     end  
@@ -30,8 +29,8 @@ class Doctors::NoticesController < ApplicationController
   
   def update
     @notice = Notice.find(params[:id])
-    if  @notice.update
-     redirect_to doctors_notice_path(@notice.id)
+    if @notice.update
+     redirect_to notice_path(@notice.id)
     else  
       "edit"
     end  
@@ -39,17 +38,14 @@ class Doctors::NoticesController < ApplicationController
   
   def destroy
     @notice = Notice.find(params[:id])
-    if @notice.destroy
-      redirect_to doctors_notices_path
-    else
-      render "show"
-    end  
+    @notice.destroy
+      redirect_to notices_path
   end
   
   private
   
   def notice_params
-  # params.require(:notice).permit(:title, :body, :category_id, :doctor_id)
-  params.permit(:title, :body, :category_id, :doctor_id)
+  # params.require(:notice).permit(:title, :body, :category_id)
+   params.permit(:title, :body, :category_id)
   end
 end

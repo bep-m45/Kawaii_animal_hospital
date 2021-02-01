@@ -1,0 +1,45 @@
+<div class="flame-top"></div>
+<h1>記事投稿画面</h1>
+<div class="containers">
+  <div class="sidebar-left"></div>
+  <div class="main-container">
+    <div class="box">
+      <%= form_with model: @category, local: true do |f| %>
+        <table>
+          <tr>
+            <td><%= f.label :name, "カテゴリー名" %></td>
+          </tr>
+          <tr>
+            <td><%= f.text_field :name %></td>
+          </tr>
+        </table><br />
+        <%= f.submit "投稿" %>
+      <% end %>
+    </div>
+    <div class="box">
+      <table>
+        <thead>
+          <tr>
+            <th>カテゴリー名</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @categories.each do |category| %>
+          <tr>
+            <td>
+              <%= category.name %>
+            </td>
+            <td>
+              <%= link_to "編集", edit_category_path(category.id) %>
+              <%= link_to "削除", category_path(category.id), method: :delete, data: { confirm: "本当に削除しますか？" } %>
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="sidebar-right"></div>
+</div>
+

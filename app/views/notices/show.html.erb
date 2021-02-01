@@ -21,12 +21,12 @@
               <th>カテゴリ</th>
             </tr>
             <tr>
-              <td><%= @category.name %></td>
+              <td><%#= @category.name %></td>
             </tr>
           </table><br />
-          <%= link_to "編集", edit_doctors_notice_path(@notice.id) %>
-          <%= link_to "削除", doctors_notice_path(@notice.id), method: :delete %>
-          <%= link_to "記事一覧", doctors_notices_path %>
+          <%= link_to "編集", edit_notice_path(@notice.id) %>
+          <%= link_to "削除", notice_path(@notice.id), method: :delete %>
+          <%= link_to "記事一覧", notices_path %>
       </div>
     </div>
     <div class="sidebar-right"></div>
