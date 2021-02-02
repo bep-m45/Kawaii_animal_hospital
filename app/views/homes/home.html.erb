@@ -17,7 +17,7 @@
         <tr class="notise-item">
           
           <td class="notise-item">
-            <%= notice.title %>
+            <%= link_to notice.title, notices_path(notice.id) %>
           </td>
         </tr>
         <tr>

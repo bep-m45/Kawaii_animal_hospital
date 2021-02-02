@@ -29,7 +29,7 @@ class NoticesController < ApplicationController
   
   def update
     @notice = Notice.find(params[:id])
-    if @notice.update
+    if @notice.update(notice_params)
      redirect_to notice_path(@notice.id)
     else  
       "edit"
@@ -45,7 +45,7 @@ class NoticesController < ApplicationController
   private
   
   def notice_params
-  # params.require(:notice).permit(:title, :body, :category_id)
-   params.permit(:title, :body, :category_id)
+  params.require(:notice).permit(:title, :body, :category_id)
+  # params.permit(:title, :body, :category_id)
   end
 end
