@@ -7,7 +7,7 @@ class NoticesController < ApplicationController
   end
   def show
     @notice = Notice.find(params[:id])
-    # @category = Category.find(params[:category_id])
+    @category = @notice.category
   end 
   
   def new
