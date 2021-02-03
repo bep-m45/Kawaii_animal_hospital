@@ -17,7 +17,7 @@
         <tr class="notise-item">
           
           <td class="notise-item">
-            <%= notice.title %>
+            <%= link_to notice.title, notice_path(notice.id) %>
           </td>
         </tr>
         <tr>
@@ -40,7 +40,6 @@
     </div>
   <!--</div>-->
 </div>
-<!--<video class="dogrun-vedeo" src="video.mp4" controls></video>-->
 <div class="home-main container">
   <div class="box">
     <div class="inpuiry-containers">
@@ -68,6 +67,22 @@
     <div class="access-container">
       <div class="access-image">
         <!-- mapが入る -->
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwSlLYlT8BEAuwBUaBhs5dkjJPf8XW4c&callback=initMap">
+        </script>
+        <script>
+          function initMap() {
+            var mapPosition = new google.maps.LatLng( 35.6882495,139.6856557 );//緯度経度
+            var map = new google.maps.Map(document.getElementById("gmap"), {
+            zoom: 17,//ズーム
+            center: mapPosition
+          });
+            var marker = new google.maps.Marker({
+            position: mapPosition,
+            map: map
+            });
+          }
+        </script>
+        <div id="gmap"></div>
       </div>
       <div class="access-text-container">
         <div class="access-text-heading">【交通案内】</div>
