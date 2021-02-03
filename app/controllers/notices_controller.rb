@@ -2,12 +2,12 @@ class NoticesController < ApplicationController
   
   def index
     @notices = Notice.all
-    # @category = notice.category
     
-  end
+  end 
+  
   def show
     @notice = Notice.find(params[:id])
-    @category = @notice.category
+    
   end 
   
   def new
@@ -45,7 +45,7 @@ class NoticesController < ApplicationController
   private
   
   def notice_params
-  params.require(:notice).permit(:title, :body, :category_id)
-  # params.permit(:title, :body, :category_id)
+  # params.require(:notice).permit(:title, :body, :category_id)
+  params.permit(:title, :body, :category_id)
   end
 end

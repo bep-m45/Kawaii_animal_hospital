@@ -21,8 +21,9 @@
               <td><%= f.label :category, "カテゴリ" %></td>
             </tr>
             <tr>
-              <td><%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "--選択してください--"} %></td>
+              <td><%= f.collection_select :category, Category.all, :id, :name, {prompt: "--選択してください--"} %></td>
             </tr>
+            
           </table><br />
           <%= f.submit "投稿" %>
         <% end %>

@@ -9,19 +9,19 @@
               <th>タイトル</th>
             </tr>
             <tr>
-              <td><%= @notice.title %></td>
+              <td><%= simple_format @notice.title %></td>
             </tr>
             <tr>
               <th>テキスト</th>
             </tr>
             <tr>
-              <td><%= @notice.body %></td>
+              <td><%= simple_format @notice.body %></td>
             </tr>
             <tr>
               <th>カテゴリ</th>
             </tr>
             <tr>
-              <td><%#= @category.name %></td>
+              <td><%#= @notice.category.name %></td>
             </tr>
           </table><br />
           <%= link_to "編集", edit_notice_path(@notice.id) %>

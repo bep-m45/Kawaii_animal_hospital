@@ -1,3 +1,4 @@
 class Category < ApplicationRecord
-  belongs_to :notice, optional: true
+  
+  belongs_to :notice
 end

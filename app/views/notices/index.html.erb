@@ -7,9 +7,7 @@
       <table>
         <thead>
           <tr>
-            <th>ID</th>
             <th>タイトル</th>
-            <th>テキスト</th>
             <th>カテゴリ</th>
             <th></th>
           </tr>  
@@ -18,16 +16,10 @@
           <% @notices.each do |notice| %>
             <tr>
               <td>
-                <%= notice.id %>
+                <%= link_to notice.title, notice_path(notice.id) %>
               </td>
               <td>
-                <%= notice.title %>
-              </td>
-              <td>
-                <%= notice.body %>
-              </td>
-              <td>
-                <%= notice.category_id %>
+                <%#= notice.category.name %>
                 </td>
               <td>
                 <%= link_to "編集", edit_notice_path(notice.id) %> 
