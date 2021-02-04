@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: "homes#home"
   get "/trimming" => "homes#trimming"
   get "/hotel" => "homes#hotel"
+  get "/information" => "homes#information"
   
   resources :notices 
   resources :categories

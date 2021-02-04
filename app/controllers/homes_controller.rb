@@ -8,4 +8,7 @@ class HomesController < ApplicationController
   
   def hotel
   end
+  
+  def information
+  end
 end
