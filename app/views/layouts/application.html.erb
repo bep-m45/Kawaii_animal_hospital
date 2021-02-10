@@ -26,11 +26,17 @@
       </div>
       <nav class="menubar">
         <ul>
-          <li><a href="http://ebc50th.com/t/shinsatsuananai/">診療方針</a></li>
-          <li><a href="http://ebc50th.com/t/staff/">スタッフ紹介</a></li>
-          <li><%= link_to"トリミング",trimming_path, "data-turbolinks": false  %></li>
-          <li><a href="http://ebc50th.com/t/hotel/">ホテル</a></li>
-          <li><a href="http://ebc50th.com/t/shisetsu/">施設紹介</a></li>
+          <% if doctor_signed_in? %>
+            <li><%= link_to "サインアウト", destroy_doctor_session_path, method: :delete %></li>
+            <li><%= link_to "記事投稿", new_notice_path %></li>
+
+          <% else %>
+            <li><a href="http://ebc50th.com/t/shinsatsuananai/">診療方針</a></li>
+            <li><a href="http://ebc50th.com/t/staff/">スタッフ紹介</a></li>
+            <li><%= link_to"トリミング",trimming_path, "data-turbolinks": false  %></li>
+            <li><%= link_to"ホテル", hotel_path %></li>
+            <li><%= link_to"施設", information_path %></li>
+          <% end %>
         </ul>
       </nav>
     </header>  
@@ -41,6 +47,7 @@
     <footer>
       <div class="flame-bottom"></div>
       <div class="footlign">
+      管理者の方は<%= link_to "コチラ>>", new_doctor_session_path %>
         <p class="copyright">Copyright © </p>
       </div>
     </footer>

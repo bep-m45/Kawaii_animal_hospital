@@ -33,6 +33,8 @@ main {
   z-index: 2;
 }
 
+/* フォント */
+
 h1 {
   font-family: 'Hachi Maru Pop', cursive;
   color: #ef790f;
@@ -59,41 +61,16 @@ h4 {
   font-family: 'Hachi Maru Pop', cursive;
   text-align: center;
   border-bottom: 5px dotted;
+  font-size: 130%;
 }
 
-.box {
- padding: 2%;
- margin: 2% 0;
- background-color: #ffffff;
- box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-}
-
-.btn-hover:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
+h5 {
+  font-size: 110%;
+  font-weight: 600;
 }
 
 .page-title {
   width: 100%;
-}
-
-.flame-top{
-  // width: 100%;
-  // background-image: image-url("flame-flower-2.PNG");
-  // background-position: bottom;
-  // background-size: cover;
-
-  width: 50%;
-  padding: 19% 17% 5% 17%;
-  background-image: image-url("flame/flame-flower-4.PNG");
-  display: flex;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.containers {
-  display: flex;
-  flex: flex-end;
 }
 
 /* header */
@@ -139,13 +116,13 @@ h4 {
 }
 
 .menubar > ul{
-display: table;
-margin: 0 auto;
-padding: 0;
-width: 80%;
-text-align: center;
-font-size: 130%;
-font-family: 'Hachi Maru Pop', cursive;
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  font-size: 130%;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 
 .menubar > ul li{
@@ -167,10 +144,49 @@ font-weight: bold;
 background-color: #f2dc24;
 }
 
-/* main */
+/* main-共通 */
 main {
 width: 100%;
 height: auto;
+}
+
+.flame-top{
+  width: 50%;
+  padding: 19% 17% 5% 17%;
+  background-image: image-url("flame/flame-flower-4.PNG");
+  display: flex;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.box {
+ padding: 2%;
+ margin: 2% 0;
+ background-color: #ffffff;
+ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.containers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 73%;
+}
+
+.sidebar-left {
+  width: 6%;
+}
+
+.sidebar-right {
+  width: 6%;
+}
+
+.btn-hover:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
 }
 
 /* footer */
@@ -179,33 +195,19 @@ footer {
 }
 
 .flame-bottom {
-  /* big-flower */
-  // width: 100%;
-  // height: 355px;
-  // background-image: image-url("flame-flower-3.PNG");
-  // background-position: center;
-  // background-size: cover;
-
-  /* 桜 */
   width: 50%;
   height: 355px;
   background-image: image-url("flame/flame-flower-5.PNG");
   background-position: top;
   background-size: cover;
   margin-left: auto;
-
-/* 足跡 */
-  // padding: 7%;
-  // background-image: image-url("flame-animal-1.PNG");
-  // background-position: top;
-  // background-size: contain;
 }
 
 .footlign {
-width: 100%;
-height: 100px;
-background-color: #ef790f;
-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100px;
+  background-color: #ef790f;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .footlign > p {
@@ -225,32 +227,22 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .home-flame-top {
-/* big-flower */
-  // background-image: image-url("flame-flower-1.PNG");
-  // background-size: cover;
-  // background-position: center;
-  // padding: 19% 17% 5% 17%;
-  // display: flex;
-/* 桜 */
   width: 50%;
   padding: 19% 17% 5% 17%;
   background-image: image-url("flame/flame-flower-4.PNG");
   display: flex;
   background-size: cover;
   background-position: bottom;
-
-  /* 足跡　*/
-  // padding: 7%;
-  // margin-bottom: 5%;
-  // background-image: image-url("flame-animal-1.PNG");
-  // display: flex;
-  // background-size: contain;
-  // background-position: bottom;
 }
 
 .home-image-item {
   width: 100%;
   height: 600px;
+}
+
+.home-image-logo {
+  width: 80%;
+  padding-left: 20%;
 }
 
 .slick-next {
@@ -329,7 +321,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .inpuiry-image-1 {
-  background-image: image-url("inpuiry-image-1.png");
+  background-image: image-url("home/inpuiry-image-1.png");
   background-size: cover;
   background-position: center;
   width: 33%;
@@ -337,7 +329,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .inpuiry-image-2 {
-  background-image: image-url("inpuiry-image-2.png");
+  background-image: image-url("home/inpuiry-image-2.png");
    background-size: cover;
   background-position: center;
   width: 21%;
@@ -393,45 +385,43 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   font-size: 100%;
 }
 
+#gmap {
+  width: 100%;
+  height: 500px;
+}
+
 /* trimming */
-.trimming-container {
-  width: 73%;
+.trimming-sidebar-left{
+
 }
 
-.sidebar-left {
-  width: 6%;
-  margin-left: 2%;
-  margin-right: 5%;
+.trimming-sidebar-right {
+ 
 }
-
-.sidebar-right {
-  width: 6%;
-}
-
 
 .tirimming-image-1 {
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 1.5s;
-    width: 250%;
-    margin-top: 100%;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 250%;
+  margin-top: 100%;
  }
 
  .tirimming-image-2 {
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 1.0s;
-    width: 200%;
-    margin-top: 950%;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.0s;
+  width: 200%;
+  margin-top: 950%;
 
  }
 
 .trimming-animation{
-    animation-name: anim_s;
-    transform: rotate(10deg);
-    animation-duration: 5s;
+  animation-name: anim_s;
+  transform: rotate(10deg);
+  animation-duration: 5s;
 }
 
 .trimming-animation:hover{
@@ -447,8 +437,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
-.commitment-container {
-}
 .commitment-text {
   width: 100%;
   border: solid 4px #3F9BBF;
@@ -476,6 +464,18 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
+.message-container-a {
+  width: 35%;
+  border: solid 4px rgba(255, 240, 30, 0.6);
+  background-color: rgba(255, 240, 30, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  padding: 2% 5%;
+  margin-top: 2%;
+  margin-right: 2.5%;
+  color: #ef790f;
+}
+
 /* trimming-complement */
 .complement-container {
   display: flex;
@@ -489,20 +489,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #FF1E22;
   font-size: 90%;
-}
-
-.price-message-container {
-  width: 35%;
-  border: solid 4px rgba(255, 240, 30, 0.6);
-  background-color: rgba(255, 240, 30, 0.6);
-  border-radius: 50%;
-  text-align: center;
-  padding: 2% 5%;
-  margin-top: 1%;
-  margin-right: 2.5%;
-}
-.price-message-container > h4 {
-color: #ef790f;
 }
 
 .coupon-container {
@@ -537,7 +523,7 @@ color: #ef790f;
   width: 100%;
   padding-top: 10%;
   padding-bottom: 10%;
-  background-image: image-url("gallery-back.jpg");
+  background-image: image-url("trimming/gallery-back.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
@@ -579,6 +565,7 @@ color: #ef790f;
 	70%  { -webkit-transform: scale(1.1, 0.9) translate(0%, 5%); }
 	100% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
 }
+
 @keyframes gallery-image {
 	0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
 	15%  { transform: scale(0.9, 0.9) translate(0%, 5%); }
@@ -597,6 +584,77 @@ color: #ef790f;
  margin-bottom: 5%;
 }
 
+/* hotel */
+.hotel-commitment-list {
+  list-style-type: none;
+}
 
+.hotel-item {
+  width: 50%;
+  padding: 2%;
+}
 
+.hotel-image-item {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-contain: center;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
 
+.hotel-praice-text {
+  font-size: 130%;
+}
+
+.dogrun-video {
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hotel-background {
+  padding: 10%;
+  margin-top: 5%;
+  
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  background-image: image-url("hotel/hotel-background.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.hotel-background > .containers {
+  margin: 5% 0;
+}
+
+.hotel-image-heading {
+  padding: 1%;
+  text-align: center;
+  font-size: 110%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hotel-image3 {
+  width: 30%;
+}
+
+.message-container-h {
+  width: 70%;
+  border: solid 4px rgba(255, 240, 30, 0.6);
+  background-color: rgba(255, 240, 30, 0.6);
+  border-radius: 20%;
+  padding: 2% 5%;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  color: #ef790f;
+}
+
+/* infomation */
+.information-image {
+ text-align: center;
+ margin: 3% auto;
+}
+.information-image-item {
+  width: 70%;
+  height: 500px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}

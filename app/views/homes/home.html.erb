@@ -1,38 +1,34 @@
 <div class="home-container">
   <div class="home-image-container">
     <div id="slider">
-      <div class="home-image"><img class="home-image-item" src="assets/home/home-image3.PNG"></div>
+      <div class="home-image"><img class="home-image-item" src="assets/home/home-imege1.jpg"></div>
       <div class="home-image"><img class="home-image-item" src="assets/home/home-image2.jpg"></div>
-      <div class="home-image"><img class="home-image-item" src="assets/home/home-image1.jpg"></div>
+      <div class="home-image"><img class="home-image-item" src="assets/home/home-image3.jpg"></div>
     </div>
   </div>
   <div class="home-flame-top"></div>
+  <img class="home-image-logo" src="assets/home/home-image-logo.PNG">
+  
   <div class="home-main">
-    <!--<div class="home-flame-top">-->
+    <!-- お知らせ -->
     <div class="notise-container">
       <h3 class="notise-heading"><i class="fas fa-dog"></i> お知らせ</h3>
       <table>
+        <% @notice.each do |notice| %>
         <tr class="notise-item">
-          <td>
-            <p class="notise-create">2020/12/20</p>
-            <p class="notise-title"><a href="#">年末年始の診療時間について</a></p>
+          <td class="notise-item">
+            <%= link_to notice.title, notice_path(notice.id) %>
           </td>
         </tr>
         <tr>
           <td class="notise-item">
-            <p class="notise-create">2021/1/4</p>
-            <p class="notise-title"><a href="#">年始のご挨拶</a></p>
+            <%= notice.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
           </td>
-        </tr>
-        <tr>
-          <td class="notise-item">
-            <p class="notise-create">201/1/19</p>
-            <p class="notise-title"><a href="#">ホームページリニューアルについて</a></p>
-          </td>
-        </tr>
+        </tr>  
+        <% end %>
       </table>
     </div>
-
+    <!-- メニュー -->
     <div class="nav-container">
       <div class="nav-image btn-hover"><a href="http://ebc50th.com/t/info/"><img class="nav-image-item" src="assets/item/nav-image-1.png"></img></a></div>
       <div class="nav-image btn-hover"><a href="http://ebc50th.com/t/shisetsu/"><img class="nav-image-item" src="assets/item/nav-image-2.png"></img></a></div>
@@ -40,53 +36,77 @@
       <div class="nav-image btn-hover"><a href="http://ebc50th.com/t/kenkoucheck/"><img class="nav-image-item" src="assets/item/nav-image-4.png"></img></a></div>
       <div class="nav-image btn-hover"><a href="http://ebc50th.com/t/staff/"><img class="nav-image-item" src="assets/item/nav-image-5.png"></img></a></div>
       <div class="nav-image btn-hover"><a href="http://ebc50th.com/t/shukkinhyou/"><img class="nav-image-item" src="assets/item/nav-image-6.png"></img></a></div>
-      <div class="nav-image btn-hover"><%= link_to trimming_path, "data-turbolinks": false do %><img class="nav-image-item" src="assets/item/item/nav-image-7.png"></img><% end %></div>
+      <div class="nav-image btn-hover"><%= link_to trimming_path, "data-turbolinks": false do %><img class="nav-image-item" src="assets/item/nav-image-7.png"></img><% end %></div>
     </div>
-  <!--</div>-->
-</div>
-<!--<video class="dogrun-vedeo" src="video.mp4" controls></video>-->
-<div class="home-main container">
-  <div class="box">
-    <div class="inpuiry-containers">
-      <div id="inpuiry-heading">
-        <h2><i class="fas fa-paw" ></i> お問い合わせ・ご予約はコチラ <i class="fas fa-paw"></i></h2>
-      </div>
-      <div class="inpuiry-container">
-         <div class="inpuiry-image-1"></div>
-        <div class="inpuiry-image">
-          <a href="#"><img class="inpuiry-image-item btn-hover" src="assets/item/inpuiry-1.png"></a>
-          <a href="http://ebc50th.com/t/wanchannekochan/"><img class="inpuiry-image-item btn-hover" src="assets/inpuiry-3.png"></a>
+    <!-- ここまで -->
+  </div>
+  
+  <div class="home-main container">
+    <div class="box">
+      <div class="inpuiry-containers">
+        <div id="inpuiry-heading">
+          <h2><i class="fas fa-paw" ></i> お問い合わせ・ご予約はコチラ <i class="fas fa-paw"></i></h2>
         </div>
-        <div class="inpuiry-image">
-          <a href="#"><img class="inpuiry-image-item btn-hover" src="assets/item/inpuiry-2.png"></a>
-          <a href="http://ebc50th.com/t/usagisan/"><img class="inpuiry-image-item btn-hover" src="assets/inpuiry-3.png"></a>
+        
+        <!-- 電話・ネット予約ボタン -->
+        <div class="inpuiry-container">
+            <div class="inpuiry-image-1"></div>
+            <div class="inpuiry-image">
+              <a href="#"><img class="inpuiry-image-item btn-hover" src="assets/item/inpuiry-1.png"></a>
+              <a href="http://ebc50th.com/t/wanchannekochan/"><img class="inpuiry-image-item btn-hover" src="assets/item/inpuiry-3.png"></a>
+            </div>
+            <div class="inpuiry-image">
+              <a href="#"><img class="inpuiry-image-item btn-hover" src="assets/item/inpuiry-2.png"></a>
+              <a href="http://ebc50th.com/t/usagisan/"><img class="inpuiry-image-item btn-hover" src="assets/item/inpuiry-3.png"></a>
+            </div>
+            <div class="inpuiry-image-2"></div>
         </div>
-        <div class="inpuiry-image-2"></div>
-        </div>
+        <!-- ここまで -->
+        
       </div>  
       <div class="calender">
-      <img class="calender-image-item" src="assets/item/calender.png">
-    </div>
-    
-    <h2 class="access-heading"><i class="fas fa-dove"></i> アクセス</h2>
-    <div class="access-container">
-      <div class="access-image">
-        <!-- mapが入る -->
+        <img class="calender-image-item" src="assets/item/calender.png">
       </div>
-      <div class="access-text-container">
-        <div class="access-text-heading">【交通案内】</div>
-        <div class="access-text-item">
-          <p>
-            ○バスでお越しの方<br />
-            青葉台駅より〇番のりばから東急バス「藤が丘駅行」乗車「桜台」下車  徒歩５分
-          </p>
-          <p>
-            ○車でお越しの方<br />
-            駐車場２台有り
-          </p>
+      
+      <h2 class="access-heading"><i class="fas fa-dove"></i> アクセス</h2>
+      <div class="access-container">
+        <div class="access-image">
+          
+          <!-- mapが入る -->
+          <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwSlLYlT8BEAuwBUaBhs5dkjJPf8XW4c&callback=initMap">
+          </script>
+          <script>
+            function initMap() {
+              var mapPosition = new google.maps.LatLng( 35.6882495,139.6856557 );//緯度経度
+              var map = new google.maps.Map(document.getElementById("gmap"), {
+              zoom: 17,//ズーム
+              center: mapPosition
+            });
+              var marker = new google.maps.Marker({
+              position: mapPosition,
+              map: map
+              });
+            }
+          </script>
+          <div id="gmap"></div>
+          <!-- ここまで　-->
+          
+        </div>
+        <div class="access-text-container">
+          <div class="access-text-heading">【交通案内】</div>
+          <div class="access-text-item">
+            <p>
+              ○バスでお越しの方<br />
+              青葉台駅より〇番のりばから東急バス「藤が丘駅行」乗車「桜台」下車  徒歩５分
+            </p>
+            <p>
+              ○車でお越しの方<br />
+              駐車場２台有り
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    
   </div>
-</div>
 </div>
