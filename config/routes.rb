@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :doctors
   root to: "homes#home"
   get "/trimming" => "homes#trimming"
   get "/hotel" => "homes#hotel"
   get "/information" => "homes#information"
   
- 
+  resources :docotrs, only: [:index] 
+  devise_for :doctors  ,controllers: {
+    sessions: 'doctors/sessions'
+  }
   
   
   
