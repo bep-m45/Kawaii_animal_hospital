@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'notices/new'
+  get 'notices/index'
+  get 'notices/edit'
+  get 'notices/show'
   root to: "homes#home"
   get "/trimming" => "homes#trimming"
   get "/hotel" => "homes#hotel"
@@ -8,6 +12,8 @@ Rails.application.routes.draw do
   devise_for :doctors  ,controllers: {
     sessions: 'doctors/sessions'
   }
+  
+  resources :notices
   
   
   
