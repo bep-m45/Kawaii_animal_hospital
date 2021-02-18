@@ -8,6 +8,7 @@
           <tr>
             <th>タイトル</th>
             <th>内容</th>
+            <th>カテゴリー</th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +18,9 @@
             </td>
             <td>
               <%= @notice.body %>
+            </td>
+            <td>
+              <%= @notice.category.name %>
             </td>
           </tr>
         </tbody>
