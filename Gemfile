@@ -64,6 +64,8 @@ gem "bootstrap-sass", "~>3.3.6"
 gem "jquery-rails"
 gem 'dotenv-rails'
 gem 'devise'
+gem 'mini_magick'
+gem 'carrierwave'
 # group :production do
 #   gem 'mysql2'
 # end

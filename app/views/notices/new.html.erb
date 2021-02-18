@@ -1,0 +1,22 @@
+<div class="flame-top"></div>
+<h1>記事投稿</h1>
+<div class="containers">
+  <div class="sidebar-left"></div>
+  <div class="main-container">
+    <div class="box">
+      <%= form_with model: @notice, local: true do |f| %>
+      <%= f.label :images, "画像" %>
+      <%=f.file_field :images, multiple: true %>
+      <%= f.label :title, "タイトル" %>
+      <%= f.text_field :title %>
+      <%= f.label :body, "内容" %>
+      <%= f.text_area :body %>
+      <%= f.label :body, "カテゴリ" %>
+      <%= f.select :category_id, Category.all.map{|c| [c.name, c.id]} %>
+      <%= f.submit "投稿" %>
+      <% end %>
+      
+    </div>
+  </div>
+  <div class="sidebar-right"></div>
+</div>  

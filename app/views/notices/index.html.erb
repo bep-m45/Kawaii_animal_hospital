@@ -1,0 +1,29 @@
+<div class="flame-top"></div>
+<div class="containers">
+  <div class="sidebar-left"></div>
+  <div class="main-container">
+    <div class="box">
+      <table>
+        <thead>
+          <tr>
+            <th>タイトル</th>
+            <th>カテゴリー</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @notices.each do |notice| %>
+            <tr>
+              <td>
+                <%= link_to notice.title, notice_path(notice.id) %>
+              </td>
+              <td>
+                <%= notice.category.name %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="sidebar-right"></div>
+</div>  

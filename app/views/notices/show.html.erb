@@ -1,0 +1,38 @@
+<div class="flame-top"></div>
+<div class="containers">
+  <div class="sidebar-left"></div>
+  <div class="main-container">
+    <div class="box">
+      <table>
+        <thead>
+          <tr>
+            <th>タイトル</th>
+            <td>画像</td>
+            <th>内容</th>
+            <th>カテゴリー</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <%= @notice.title %>
+            </td>
+            <td>
+              <% @notice.images.each do |image| %>
+                <%= image_tag image.to_s %>
+              <% end %>  
+            </td>
+            <td>
+              <%= @notice.body %>
+            </td>
+            <td>
+              <%= @notice.category.name %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <%= link_to "編集", edit_notice_path(@notice.id) %>
+    </div>
+  </div>
+  <div class="sidebar-right"></div>
+</div>  
