@@ -10,11 +10,18 @@ class NoticesController < ApplicationController
   end
 
   def index
+    @notices = Notice.all
   end
 
   def edit
+    @notice = Notice.find(params[:id])
   end
-
+  
+  def update 
+    @notice = Notice.find(params[:id])
+    @notice.update(notice_params)
+    redirect_to notice_path(@notice.id)
+  end
   def show
     @notice = Notice.find(params[:id])
   end
