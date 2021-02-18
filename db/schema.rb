@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_070128) do
     t.string "title"
     t.text "body"
     t.integer "category_id"
+    t.json "images"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

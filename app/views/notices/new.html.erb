@@ -5,6 +5,8 @@
   <div class="main-container">
     <div class="box">
       <%= form_with model: @notice, local: true do |f| %>
+      <%= f.label :images, "画像" %>
+      <%=f.file_field :images, multiple: true %>
       <%= f.label :title, "タイトル" %>
       <%= f.text_field :title %>
       <%= f.label :body, "内容" %>
