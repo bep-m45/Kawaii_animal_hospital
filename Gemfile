@@ -66,6 +66,7 @@ gem 'dotenv-rails'
 gem 'devise'
 gem 'mini_magick'
 gem 'carrierwave'
+gem 'simple_calendar', '~> 2.0'
 # group :production do
 #   gem 'mysql2'
 # end
